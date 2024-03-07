@@ -4,8 +4,8 @@
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://www.frontendmentor.io/solutions/wave-background-using-css-backgroundimage-9HIeN9DYax)
+- Live Site URL: (https://aallam0.github.io/Order-Summary)
 
 ### Useful resources
 
