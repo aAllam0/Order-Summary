@@ -1,0 +1,122 @@
+:root {
+  --pale-blue-color: hsl(225, 100%, 94%);
+  --bright-blue-color: hsl(245, 75%, 52%);
+  --very-pale-blue-color: hsl(225, 100%, 98%);
+  --desaturated-blue-color: hsl(224, 23%, 55%);
+  --dark-blue-color: hsl(223, 47%, 23%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue-color);
+}
+@media (max-width: 767px) {
+  .main {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+}
+.order-card {
+  background-color: white;
+  border-radius: 16px;
+  width: 335px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgb(0 0 0 / 20%);
+}
+.order-card > img {
+  max-width: 100%;
+}
+.order-card .holder {
+  padding: 30px;
+}
+.order-card .holder .text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.order-card .holder .text h1 {
+  margin: 0;
+  color: var(--dark-blue-color);
+  font-size: 28px;
+}
+.order-card .holder .text p {
+  color: var(--desaturated-blue-color);
+  line-height: 1.6;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 17px;
+}
+.order-card .holder .info {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--very-pale-blue-color);
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.order-card .holder .info img {
+  margin-right: 15px;
+}
+.order-card .holder .info .plan {
+  flex: 1;
+}
+.order-card .holder .info .plan h4 {
+  color: var(--dark-blue-color);
+  margin: 0px 0 5px;
+}
+.order-card .holder .info .plan span {
+  color: var(--desaturated-blue-color);
+  font-size: 14px;
+}
+.order-card .holder .info a {
+  font-size: 14px;
+  color: var(--bright-blue-color);
+  transition: 0.3s;
+}
+.order-card .holder .info a:hover {
+  color: hsl(245deg 75% 52% / 70%);
+  text-decoration: none;
+}
+.order-card .holder .buttons {
+  text-align: center;
+}
+.order-card .holder .buttons a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--bright-blue-color);
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: 0 10px 12px hsl(245deg 75% 52% / 25%);
+  transition: 0.3s;
+  font-size: 13px;
+  font-weight: bold;
+}
+.order-card .holder .buttons a:hover {
+  background-color: hsl(245deg 75% 52% / 70%);
+}
+.order-card .holder .buttons button {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--desaturated-blue-color);
+  font-weight: 900;
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.order-card .holder .buttons button:hover {
+  color: var(--dark-blue-color);
+}
