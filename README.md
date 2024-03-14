@@ -1,4 +1,4 @@
-# Frontend Mentor - Page name
+# Frontend Mentor - Order Summary Page
 
 ![](images/order-summary.png)
 
